@@ -1,4 +1,4 @@
-import { App, Stack, StackProps } from 'aws-cdk-lib';
+import { App, Stack, StackProps } from '@aws-cdk/core';
 import { Construct } from 'constructs';
 
 export class MyStack extends Stack {
