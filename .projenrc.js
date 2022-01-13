@@ -1,7 +1,7 @@
 const { awscdk } = require('projen');
 
 const project = new awscdk.AwsCdkTypeScriptApp({
-  cdkVersion: '1.139.0',
+  cdkVersion: '2.7.0',
   defaultReleaseBranch: 'main',
   name: 'projen-multi-stack',
 
