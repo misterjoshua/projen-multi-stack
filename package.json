@@ -30,13 +30,11 @@
     "projen": "npx projen"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "^1.139.0",
-    "@aws-cdk/assertions": "^1.139.0",
     "@types/jest": "^27.4.0",
     "@types/node": "^12",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk": "^1.139.0",
+    "aws-cdk": "^2.7.0",
     "esbuild": "^0.14.11",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
@@ -52,8 +50,8 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "@aws-cdk/core": "^1.139.0",
-    "constructs": "^3.2.27"
+    "aws-cdk-lib": "^2.7.0",
+    "constructs": "^10.0.5"
   },
   "license": "Apache-2.0",
   "version": "0.0.0",
