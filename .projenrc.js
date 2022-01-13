@@ -11,4 +11,8 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   // packageName: undefined,  /* The "name" in package.json. */
 });
 
+project.upgradeWorkflow?.postUpgradeTask.spawn(
+  project.tasks.tryFind('integ:my-stage:snapshot'),
+);
+
 project.synth();
