@@ -1,4 +1,4 @@
-import { App, Stack, Stage } from "@aws-cdk/core";
+import { App, Stack, Stage } from '@aws-cdk/core';
 
 const app = new App();
 const stage = new Stage(app, 'my-stage');

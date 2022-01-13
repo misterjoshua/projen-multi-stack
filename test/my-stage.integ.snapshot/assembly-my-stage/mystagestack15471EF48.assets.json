@@ -1,0 +1,19 @@
+{
+  "version": "16.0.0",
+  "files": {
+    "93ae4de94f81d0905c37db64b7304f5d65233ca4d9581d3a32215743c9bb92dd": {
+      "source": {
+        "path": "mystagestack15471EF48.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "93ae4de94f81d0905c37db64b7304f5d65233ca4d9581d3a32215743c9bb92dd.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

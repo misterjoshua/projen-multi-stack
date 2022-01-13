@@ -1,4 +1,5 @@
 const { awscdk } = require('projen');
+
 const project = new awscdk.AwsCdkTypeScriptApp({
   cdkVersion: '1.139.0',
   defaultReleaseBranch: 'main',
@@ -9,4 +10,9 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   // devDeps: [],             /* Build dependencies for this module. */
   // packageName: undefined,  /* The "name" in package.json. */
 });
+
+project.upgradeWorkflow?.postUpgradeTask.spawn(
+  project.tasks.tryFind('integ:my-stage:snapshot'),
+);
+
 project.synth();
